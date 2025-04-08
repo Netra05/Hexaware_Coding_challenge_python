@@ -5,9 +5,9 @@ import pyodbc
 def get_connection():
     try:
         conn = pyodbc.connect(
-            "DRIVER={ODBC Driver 17 for SQL Server};"
-            "SERVER=LAPTOP-A3LRA9TF;"
-            "DATABASE=PetPals;"
+            "DRIVER={your driver name};"
+            "SERVER=your server name;"
+            "DATABASE=your database name;"
             "Trusted_Connection=yes;"
         )
         print("Database connection established successfully.")
